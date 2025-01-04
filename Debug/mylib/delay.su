@@ -1,0 +1,3 @@
+../mylib/delay.c:15:6:delay_us	24	static
+../mylib/delay.c:28:6:delay_ms	16	static
+../mylib/delay.c:35:6:delay_s	16	static

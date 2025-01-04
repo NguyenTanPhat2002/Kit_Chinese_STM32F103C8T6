@@ -1,0 +1,9 @@
+../mylib/LCD1602.c:24:13:LCD_SetPin	1
+../mylib/LCD1602.c:29:13:LCD_Enable	1
+../mylib/LCD1602.c:37:13:LCD_Send4Bit	1
+../mylib/LCD1602.c:45:13:LCD_SendCommand	1
+../mylib/LCD1602.c:53:6:LCD_Clear	1
+../mylib/LCD1602.c:59:6:LCD_Init	1
+../mylib/LCD1602.c:80:6:LCD_Gotoxy	2
+../mylib/LCD1602.c:88:6:LCD_PutChar	1
+../mylib/LCD1602.c:95:6:LCD_Puts	2
