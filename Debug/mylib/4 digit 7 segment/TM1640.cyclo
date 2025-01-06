@@ -1,7 +1,7 @@
-../mylib/4 digit 7 segment/TM1640.c:29:6:TM1640_start	1
-../mylib/4 digit 7 segment/TM1640.c:39:6:TM1640_stop	1
-../mylib/4 digit 7 segment/TM1640.c:47:6:TM1640_write	3
-../mylib/4 digit 7 segment/TM1640.c:68:6:TM1640_Init	1
-../mylib/4 digit 7 segment/TM1640.c:94:6:TM1640_led	1
-../mylib/4 digit 7 segment/TM1640.c:101:6:TM1640_display	1
-../mylib/4 digit 7 segment/TM1640.c:113:6:TM1640_display_add	2
+../mylib/4 digit 7 segment/TM1640.c:28:6:TM1640_start	1
+../mylib/4 digit 7 segment/TM1640.c:38:6:TM1640_stop	1
+../mylib/4 digit 7 segment/TM1640.c:46:6:TM1640_write	3
+../mylib/4 digit 7 segment/TM1640.c:67:6:TM1640_Init	1
+../mylib/4 digit 7 segment/TM1640.c:93:6:TM1640_led	1
+../mylib/4 digit 7 segment/TM1640.c:100:6:TM1640_display	1
+../mylib/4 digit 7 segment/TM1640.c:112:6:TM1640_display_add	2

@@ -2593,6 +2593,104 @@ Discarded input sections
  .debug_frame   0x0000000000000000       0x34 ./mylib/Sensor_temperature/Lm75A.o
  .ARM.attributes
                 0x0000000000000000       0x2d ./mylib/Sensor_temperature/Lm75A.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .group         0x0000000000000000        0xc ./mylib/utils/button.o
+ .text          0x0000000000000000        0x0 ./mylib/utils/button.o
+ .data          0x0000000000000000        0x0 ./mylib/utils/button.o
+ .bss           0x0000000000000000        0x0 ./mylib/utils/button.o
+ .text.btn_pressing_callback
+                0x0000000000000000       0x12 ./mylib/utils/button.o
+ .text.btn_release_callback
+                0x0000000000000000       0x12 ./mylib/utils/button.o
+ .text.btn_press_short_callback
+                0x0000000000000000       0x12 ./mylib/utils/button.o
+ .text.btn_pressing_timeout_callback
+                0x0000000000000000       0x12 ./mylib/utils/button.o
+ .text.button_handle
+                0x0000000000000000       0xec ./mylib/utils/button.o
+ .text.Button_Init
+                0x0000000000000000       0x24 ./mylib/utils/button.o
+ .debug_info    0x0000000000000000      0x30d ./mylib/utils/button.o
+ .debug_abbrev  0x0000000000000000      0x173 ./mylib/utils/button.o
+ .debug_aranges
+                0x0000000000000000       0x48 ./mylib/utils/button.o
+ .debug_rnglists
+                0x0000000000000000       0x32 ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000      0x1a2 ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000      0xa9c ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000      0x215 ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000       0x2e ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000       0x22 ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000       0x22 ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000       0x8e ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000       0x51 ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000      0x103 ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000       0x6a ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000      0x1df ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000       0x1c ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000       0x22 ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000       0xbd ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000      0xd23 ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000     0xe09e ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000       0x6d ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000     0x34a2 ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000      0x174 ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000       0x5c ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000      0x5bc ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000      0x289 ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000      0x1cb ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000      0x114 ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000      0x1b2 ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000       0x27 ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000      0x136 ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000      0x1bc ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000       0x34 ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000       0x3c ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000       0x57 ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000       0x87 ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000      0x240 ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000      0x287 ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000      0x140 ./mylib/utils/button.o
+ .debug_macro   0x0000000000000000       0x83 ./mylib/utils/button.o
+ .debug_line    0x0000000000000000      0x7d1 ./mylib/utils/button.o
+ .debug_str     0x0000000000000000    0x7c6e1 ./mylib/utils/button.o
+ .comment       0x0000000000000000       0x44 ./mylib/utils/button.o
+ .debug_frame   0x0000000000000000       0xfc ./mylib/utils/button.o
+ .ARM.attributes
+                0x0000000000000000       0x2d ./mylib/utils/button.o
  .group         0x0000000000000000        0xc ./mylib/utils/delay.o
  .group         0x0000000000000000        0xc ./mylib/utils/delay.o
  .group         0x0000000000000000        0xc ./mylib/utils/delay.o
@@ -3037,6 +3135,7 @@ LOAD ./mylib/LCD1602/LCD1602.o
 LOAD ./mylib/OLED_SH1106/I2C.o
 LOAD ./mylib/OLED_SH1106/oled0561.o
 LOAD ./mylib/Sensor_temperature/Lm75A.o
+LOAD ./mylib/utils/button.o
 LOAD ./mylib/utils/delay.o
 START GROUP
 LOAD C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a

@@ -5,12 +5,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../mylib/utils/button.c \
 ../mylib/utils/delay.c 
 
 OBJS += \
+./mylib/utils/button.o \
 ./mylib/utils/delay.o 
 
 C_DEPS += \
+./mylib/utils/button.d \
 ./mylib/utils/delay.d 
 
 
@@ -21,7 +24,7 @@ mylib/utils/%.o mylib/utils/%.su mylib/utils/%.cyclo: ../mylib/utils/%.c mylib/u
 clean: clean-mylib-2f-utils
 
 clean-mylib-2f-utils:
-	-$(RM) ./mylib/utils/delay.cyclo ./mylib/utils/delay.d ./mylib/utils/delay.o ./mylib/utils/delay.su
+	-$(RM) ./mylib/utils/button.cyclo ./mylib/utils/button.d ./mylib/utils/button.o ./mylib/utils/button.su ./mylib/utils/delay.cyclo ./mylib/utils/delay.d ./mylib/utils/delay.o ./mylib/utils/delay.su
 
 .PHONY: clean-mylib-2f-utils
 

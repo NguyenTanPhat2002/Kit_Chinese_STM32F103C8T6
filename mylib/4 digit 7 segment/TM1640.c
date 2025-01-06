@@ -5,7 +5,6 @@
  *      Author: LAPTOP
  */
 
-
 #include "TM1640.h"
 #include "delay.h"
 
@@ -27,42 +26,42 @@
 #define TM1640MEDO_DISPLAY_OFF  0x80   // Tắt hiển thị
 
 void TM1640_start() {
-    HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_DIN, GPIO_PIN_SET);
-    HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_SCLK, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_DIN, GPIO_PIN_SET); // Thiết lập chân DIN mức cao
+    HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_SCLK, GPIO_PIN_SET); // Thiết lập chân SCLK mức cao
     delay_us(DEL);
-    HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_DIN, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_DIN, GPIO_PIN_RESET); // Đưa chân DIN xuống mức thấp
     delay_us(DEL);
-    HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_SCLK, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_SCLK, GPIO_PIN_RESET); // Đưa chân SCLK xuống mức thấp
     delay_us(DEL);
 }
 
 void TM1640_stop() {
-    HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_DIN, GPIO_PIN_RESET);
-    HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_SCLK, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_DIN, GPIO_PIN_RESET); // Đưa chân DIN xuống mức thấp
+    HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_SCLK, GPIO_PIN_SET); // Đưa chân SCLK lên mức cao
     delay_us(DEL);
-    HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_DIN, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_DIN, GPIO_PIN_SET); // Đưa chân DIN lên mức cao
     delay_us(DEL);
 }
 
 void TM1640_write(uint8_t data) {
     uint8_t i;
-    for (i = 0; i < 8; i++) {
-        HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_SCLK, GPIO_PIN_RESET);
+    for (i = 0; i < 8; i++) { // Lặp qua từng bit trong 1 byte
+        HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_SCLK, GPIO_PIN_RESET); // Đưa chân SCLK xuống mức thấp
         delay_us(DEL);
 
-        if (data & 0x01) {
-            HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_DIN, GPIO_PIN_SET);
+        if (data & 0x01) { // Kiểm tra bit thấp nhất
+            HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_DIN, GPIO_PIN_SET); // Gửi 1
         } else {
-            HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_DIN, GPIO_PIN_RESET);
+            HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_DIN, GPIO_PIN_RESET); // Gửi 0
         }
         delay_us(DEL);
-        HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_SCLK, GPIO_PIN_SET);
+        HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_SCLK, GPIO_PIN_SET); // Đưa chân SCLK lên mức cao
         delay_us(DEL);
 
-        data >>= 1;
+        data >>= 1; // Dịch phải để lấy bit tiếp theo
     }
-    HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_DIN, GPIO_PIN_RESET);
-    HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_SCLK, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_DIN, GPIO_PIN_RESET); // Đưa chân DIN xuống mức thấp
+    HAL_GPIO_WritePin(TM1640_GPIOPORT, TM1640_SCLK, GPIO_PIN_RESET); // Đưa chân SCLK xuống mức thấp
 }
 
 void TM1640_Init(void) {
@@ -99,7 +98,7 @@ void TM1640_led(uint8_t data) {
 }
 
 void TM1640_display(uint8_t address, uint8_t data) {
-    const uint8_t buff[21] = {
+    const uint8_t buff[21] = { // Bảng mã hiển thị số và ký tự
         0x3f, 0x06, 0x5b, 0x4f, 0x66, 0x6d, 0x7d, 0x07, 0x7f, 0x6f,
         0xbf, 0x86, 0xdb, 0xcf, 0xe6, 0xed, 0xfd, 0x87, 0xff, 0xef, 0x00
     };
@@ -112,14 +111,14 @@ void TM1640_display(uint8_t address, uint8_t data) {
 
 void TM1640_display_add(uint8_t address, uint8_t *data) {
     uint8_t i;
-    const uint8_t buff[21] = {
+    const uint8_t buff[21] = { // Bảng mã hiển thị số và ký tự
         0x3f, 0x06, 0x5b, 0x4f, 0x66, 0x6d, 0x7d, 0x07, 0x7f, 0x6f,
         0xbf, 0x86, 0xdb, 0xcf, 0xe6, 0xed, 0xfd, 0x87, 0xff, 0xef, 0x00
     };
 
     TM1640_start();
     TM1640_write(0xC0 + address);  // Gửi địa chỉ bắt đầu
-    for (i = 0; i < 8; i++) {
+    for (i = 0; i < 8; i++) { // Gửi lần lượt 8 dữ liệu hiển thị
         TM1640_write(buff[data[i]]);
     }
     TM1640_stop();

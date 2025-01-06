@@ -24,4 +24,5 @@
 "./mylib/OLED_SH1106/I2C.o"
 "./mylib/OLED_SH1106/oled0561.o"
 "./mylib/Sensor_temperature/Lm75A.o"
+"./mylib/utils/button.o"
 "./mylib/utils/delay.o"

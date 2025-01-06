@@ -10,7 +10,7 @@
 
 #include "main.h"
 
-//---------- Declare GPIO ---------
+/************** Định nghĩa chân GPIO *******************/
 #define LCD_RS_PORT  GPIOA
 #define LCD_RS_PIN   GPIO_PIN_9
 
@@ -32,7 +32,7 @@
 #define LCD_D7_PORT  GPIOA
 #define LCD_D7_PIN   GPIO_PIN_1
 
-// Function declarations
+/***********Khai báo hàm***********************/
 void LCD_Init(void);
 void LCD_Clear(void);
 void LCD_Gotoxy(unsigned char x, unsigned char y);
